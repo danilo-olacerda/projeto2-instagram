@@ -101,6 +101,7 @@ body {
 }
 .stories {
     display: flex;
+    position: relative;
     margin-top: 88px;
     width: 614px;
     border: 1px solid #DBDBDB;
@@ -144,7 +145,7 @@ body {
     width: 614px;
     margin-top: 24px;
 }
-.post > div:first-child {
+.cima-post {
     display: flex;
     height: 32px;
     margin-top: 15px;
@@ -156,6 +157,10 @@ body {
     border: 1px solid #DBDBDB;
     background-color: #FFFFFF;
     border-radius: 3px;
+}
+.post > video {
+    width: 100%;
+    
 }
 .cima-post h4 {
     margin-left: 15px;
@@ -217,7 +222,7 @@ b {
     position: fixed;
     width: 293px;
     top: 88px;
-    right: 200px;
+    right: 15%;
 }
 .perfil-principal {
     margin-top: 23px;
@@ -272,6 +277,8 @@ b {
 .perf-sug img {
     margin-right: 11px;
     align-items: center;
+    width: 32px;
+    height: 32px;
 }
 .perf-sug h3 {
     font-family: 'Roboto';
@@ -321,8 +328,8 @@ b {
 }
 .vector {
     position: absolute;
-    right: 330px;
-    top: 130px
+    right: 0;
+    top: 40px;
 }
 @media (max-width: 935px) {
     .container {
@@ -337,11 +344,6 @@ b {
     .sidebar {
         display: none;
     }
-    .vector {
-        position: absolute;
-        right: 85px;
-        top: 130px
-    }
 }
 @media (max-width: 614px) {
     .mob-icon {
@@ -351,7 +353,10 @@ b {
         display: none;
     }
     .stories {
-        background-color: blue;
+        background-color: #FAFAFA;
+        border: none;
+        margin-top: 50px;
+        margin-bottom: 0px;
     }
     .barra-busca {
         display: none;
@@ -378,14 +383,33 @@ b {
         margin-right: 0;
     }
     .menu-inferior {
-        display: initial;
+        display: flex;
+        justify-content: space-between;
         border: 1px solid #DBDBDB;
         background-color: #FFFFFF;
         border-radius: 3px;
         position: fixed;
         bottom: 0px;
-        height: 100px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .menu-inferior ion-icon {
+        font-size: 22px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .principal > div:first-child {
+        margin-top: 0px;
+    }
+    .storie {
+        margin-bottom: 0px;
+        padding-bottom: 0;
+    }
+    .principal div {
         width: 100%;
     }
-
+    .body {
+        width: 100%;
+    }
 }
