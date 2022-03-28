@@ -160,7 +160,6 @@ body {
 }
 .post > video {
     width: 100%;
-    
 }
 .cima-post h4 {
     margin-left: 15px;
@@ -357,6 +356,7 @@ b {
         border: none;
         margin-top: 50px;
         margin-bottom: 0px;
+        width: 100%;
     }
     .barra-busca {
         display: none;
@@ -374,9 +374,6 @@ b {
         display: none;
     }
     .topo {
-        width: 100%;
-    }
-    .post {
         width: 100%;
     }
     .icons-esquerda {
@@ -399,17 +396,26 @@ b {
         margin-top: 16px;
         margin-bottom: 16px;
     }
-    .principal > div:first-child {
-        margin-top: 0px;
-    }
     .storie {
         margin-bottom: 0px;
         padding-bottom: 0;
     }
-    .principal div {
+    .midia {
         width: 100%;
     }
-    .body {
+    .cima-post ion-icon {
+        margin-right: 0;
+    }
+    body {
         width: 100%;
+    }
+    .post > img, .post > video {
+        width: 100%;
+    }
+    .principal {
+        width: 100%;
+    }
+    .post h4 {
+        margin-right: 75%;
     }
 }
